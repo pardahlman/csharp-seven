@@ -26,7 +26,7 @@ class Person
 	public string LastName { get; set; }
 	public (string First, string Last) FullName => (FirstName, LastName);
 
-	public void Deconstruct(out string first, out string list)
+	public void Deconstruct(out string first, out string last)
 	{
 		first = FirstName;
 		last = LastName;
